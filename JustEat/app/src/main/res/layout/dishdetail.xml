@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <CheckBox
+        android:id="@+id/lv_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        />
+    <ImageView
+        android:id="@+id/lv_item_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/lv_item_check"
+        android:src="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/lv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lv_item_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/lv_item_img"
+        android:text="item"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lv_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lv_item_name"
+        android:layout_below="@id/lv_item_name"
+        android:layout_marginTop="5dp"
+        android:text="￥30"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button      android:id="@+id/lv_item_add"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="2dp"
+        android:text="+" />
+    <EditText
+        android:id="@+id/lv_item_txt"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/lv_item_add"
+        android:layout_alignBottom="@id/lv_item_add"
+        android:ems="10"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/lv_item_min"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignBottom="@id/lv_item_add"
+        android:layout_toLeftOf="@id/lv_item_txt"
+        android:text="-" />
+
+</RelativeLayout>

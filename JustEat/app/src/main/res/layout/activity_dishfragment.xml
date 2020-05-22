@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.justeat.DishFragmentActivity">
+
+    <fragment
+        android:id="@+id/fragment_select"
+        android:name="com.example.justeat.SelectFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_result"
+        android:name="com.example.justeat.ResultFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+
+        />
+
+    <LinearLayout
+        android:layout_width="82sp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+
+        <Button
+            android:id="@+id/f_shop_page"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="shop page"/>
+        <Button
+            android:id="@+id/f_order_history"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="order history"/>
+
+        <Button
+            android:id="@+id/f_logout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+
+            android:text="log out" />
+
+    </LinearLayout>
+</LinearLayout>
