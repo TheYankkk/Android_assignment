@@ -79,7 +79,7 @@ public class SignupActivity extends Activity {
                     user.setUsername(name);
                     user.setPassword(pass);
                     uService.register(user);
-                    Toast.makeText(SignupActivity.this, "注册成功", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SignupActivity.this, "register success", Toast.LENGTH_LONG).show();
                 }
             }
         });

@@ -69,7 +69,7 @@ public class DishActivity extends Activity implements OnItemClickListener {
                     paid.setCost(cost);
                     paid.setTime(time);
                     uService.upload(paid);
-                    Toast.makeText(DishActivity.this, "支付成功", Toast.LENGTH_LONG).show();
+                    Toast.makeText(DishActivity.this, "Paid", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(DishActivity.this, PaidActivity.class);
                     Bundle bundleSimple = new Bundle();
                     bundleSimple.putInt("cost",cost);
